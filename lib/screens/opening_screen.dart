@@ -17,9 +17,7 @@ class _OpeningScreenState extends State<OpeningScreen> {
     final firebaseUser = context.watch<User?>();
 
     if (firebaseUser != null) {
-      return Scaffold(
-        backgroundColor: Colors.black,
-      );
+      return HomeScreen();
     }
 
     return Scaffold(
