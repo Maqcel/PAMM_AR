@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:new_ar/components/custom_drawer.dart';
 import 'package:new_ar/config/firebase_paths.dart';
-import 'package:new_ar/provider/auth_provider.dart';
-import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'ar_screen.dart';
-import 'opening_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final CollectionReference places =
@@ -14,31 +12,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        elevation: 5.0,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Log out'),
-            IconButton(
-              onPressed: () {
-                print("Sign Out Pressed");
-                context.read<AuthProvider>().signOut();
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => OpeningScreen(),
-                  ),
-                );
-              },
-              icon: Icon(
-                Icons.exit_to_app,
-                color: Colors.black,
-                size: 35,
-              ),
-            ),
-          ],
-        ),
-      ),
+      drawer: CustomDrawer(),
       appBar: AppBar(
         elevation: 5.0,
         iconTheme: IconThemeData(color: Colors.black87),
