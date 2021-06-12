@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'provider/auth_provider.dart';
+import 'screens/opening_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,9 +29,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'AR-PAMM',
-        home: Scaffold(
-          backgroundColor: Colors.white,
-        ),
+        home: OpeningScreen(),
       ),
     );
   }
