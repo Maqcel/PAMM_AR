@@ -4,6 +4,7 @@ import 'package:new_ar/provider/auth_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import 'ar_screen.dart';
 import 'opening_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -95,8 +96,10 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) =>
-                                Scaffold(backgroundColor: Colors.blue),
+                            builder: (context) => ArScreen(
+                              imageUrl: json['image_url'] as String,
+                              name: json['name'] as String,
+                            ),
                           ),
                         );
                       },

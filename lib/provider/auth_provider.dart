@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:new_ar/screens/home_screen.dart';
 
 class AuthProvider {
   final FirebaseAuth _firebaseAuth;
@@ -19,11 +20,10 @@ class AuthProvider {
     try {
       await _firebaseAuth.signInWithEmailAndPassword(
           email: email, password: password);
-      print("Signed In");
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => Scaffold(),
+          builder: (context) => HomeScreen(),
         ),
       );
       return "Success";
@@ -43,7 +43,7 @@ class AuthProvider {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => Scaffold(),
+          builder: (context) => HomeScreen(),
         ),
       );
       return "Success";
