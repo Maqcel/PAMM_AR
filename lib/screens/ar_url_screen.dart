@@ -2,6 +2,15 @@ import 'package:flutter/material.dart';
 
 import 'ar_screen.dart';
 
+//**
+//? Ekran z poziomu którego mozemy odczytac czy pod podanym przez uzytkownika
+//? adresem url jest obraz. Jezeli tak wyświetli go w podglądzie aby uzytkownik
+//? mógł się upewnić czy jest to poprawny link.
+//? Ekran posiada tez podstawowa validacje czy url z pewnoscia posiada jakiekolwiek
+//? zdjęcie aby ARKIT plugin mógł wyświetlić nawet niepoprawne zdjęcie (które nie jest
+//? panoramą).
+// */
+
 class ArFromUrlScreen extends StatefulWidget {
   @override
   _ArFromUrlScreenState createState() => _ArFromUrlScreenState();

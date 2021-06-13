@@ -5,6 +5,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'ar_screen.dart';
 
+//**
+//? Ekran główny aplikacji w którym wyświetlana jest w czasie rzeczywistym
+//? lista miejsc pobrana z naszej bazy danych.
+//? Kafelki pozwalają nam na przejście do ekranu w którym korzystamy
+//? z funkcjonalności AR.
+// */
+
 class HomeScreen extends StatelessWidget {
   final CollectionReference places =
       FirebaseFirestore.instance.collection(Paths.places);

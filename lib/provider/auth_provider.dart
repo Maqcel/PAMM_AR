@@ -2,6 +2,16 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:new_ar/screens/home_screen.dart';
 
+//**
+//? Klasa odpowiedzialna za dostarczanie oraz zarządzanie stanem autoryzacji
+//? w naszej aplikacji. Korzystamy w niej z metod biblioteki Firebase_Auth
+//? pobieramy strumień przy pomocy metody _firebaseAuth.idTokenChanges()
+//? i dzięki nasłuchowi w providerze w innych ekranach aplikacji wiemy o kazdej
+//? zmianie stanu (uzytkownik loguje się, wylogowuje się).
+//? Mamy tu równiez metody do rejestracji, logowania oraz wylogowania się
+//? z aplikacji.
+// */
+
 class AuthProvider {
   final FirebaseAuth _firebaseAuth;
 

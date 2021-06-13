@@ -2,6 +2,12 @@ import 'package:new_ar/provider/auth_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
+//**
+//? Ekran rejestracji z poziomu ekranu mamy dostęp do dwóch pól tekstowych
+//? z odpowiednimi typami danych wejsciowych (email, hasło),
+//? Wywołujemy równiez metodę odpowiedzialną za rejestracje z AuthProvidera
+// */
+
 class RegisterScreen extends StatefulWidget {
   @override
   _RegisterScreenState createState() => _RegisterScreenState();

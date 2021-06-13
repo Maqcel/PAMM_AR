@@ -6,6 +6,14 @@ import 'home_screen.dart';
 import 'login_screen.dart';
 import 'register_screen.dart';
 
+//**
+//? Ekran początkowy z którego mamy dostęp do dwóch ekranów:
+//? logowania oraz ewentualnej rejestracji.
+//? W tym ekranie sprawdzamy równiez czy User nie jest juz zalogowany w aplikacji
+//? jezeli w strumieniu danych zostanie zwrócony uzytkownik przeniesiemy się
+//? bezposrednio do ekranu głownego.
+// */
+
 class OpeningScreen extends StatefulWidget {
   @override
   _OpeningScreenState createState() => _OpeningScreenState();

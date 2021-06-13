@@ -3,6 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as color;
 import 'package:vector_math/vector_math_64.dart';
 
+//**
+//? Z ekranu głównego po zdekodowaniu otrzymanego od Firestore
+//? jsona zostajemy przeniesieni tutaj gdzie przy pomocy arkit_plugin
+//? generujemy obiekt w AR pokryty obrazkiem z bazy danych bądź pobranym
+//? z url'a, który przekazał uzytkownik w ekranie ArFromUrlScreen
+// */
+
 class ArScreen extends StatefulWidget {
   final String imageUrl;
   final String name;
