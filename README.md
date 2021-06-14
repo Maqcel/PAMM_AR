@@ -8,3 +8,6 @@ Projekt działa jedynie na IOS. Jest to ograniczenie użytej biblioteki Arkit_pl
 Aby projekt działał należy dodać również plik konfiguracyjny z firebase.
 W projekcie niestety nastąpiły problemy odnośnie niekompatybilności bibliotek stąd musieliśmy zrezygnować z dodawania własnych obrazów do bazy danych.
 Gdyż image_picker oraz firebase_storage powodowały niemożlwiość kompilacji programu.
+
+## Film z użycia
+https://drive.google.com/file/d/1CehkxY-jQdvRDfl8yz4jSoEfrwuL7Xv4/view?usp=sharing
